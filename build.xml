@@ -33,7 +33,7 @@
     </jar>
   </target>
 	
-	<target name="run">
+	<target name="run" depends="dist">
 	    <java jar="${dist}/lib/HelloWorld.jar" fork="true"/>
 	</target>
 	
